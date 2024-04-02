@@ -32,7 +32,7 @@ public class Room {
                 i.setX(entity.x);
                 i.setY(entity.y);
                 i.setDepth(depth);
-                i.setCustomProperties(i.getCustomProperties());
+                i.setCustomProperties(entity.properties);
                 i.setClassPath(getEntityDefinition(entity.entityDefinitionUUID).classPath);
                 instances.add(i);
             }
@@ -45,7 +45,7 @@ public class Room {
 
     public List<Layer> getTileLayers() {
         ArrayList<Layer> tileLayers = new ArrayList<>();
-        int depth = 0;
+        int depth = 50;
 
         for(Layer layer : layerList) {
             if(layer.tileMap != null && layer.tileMap.tilesetUuid != null) {

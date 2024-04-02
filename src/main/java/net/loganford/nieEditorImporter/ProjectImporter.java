@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import lombok.Getter;
 import net.loganford.nieEditorImporter.json.EntityDefinition;
 import net.loganford.nieEditorImporter.json.Project;
+import net.loganford.nieEditorImporter.json.Room;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
