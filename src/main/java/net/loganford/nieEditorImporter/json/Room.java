@@ -50,6 +50,8 @@ public class Room {
         for(Layer layer : layerList) {
             if(layer.tileMap != null && layer.tileMap.tilesetUuid != null) {
                 layer.depth = depth;
+                layer.tileMapWidth = layer.tileMap.width;
+                layer.tileMapHeight = layer.tileMap.height;
                 layer.setTileset(getTileset(layer.tileMap.tilesetUuid));
                 tileLayers.add(layer);
             }

@@ -15,6 +15,8 @@ public class Layer {
     private transient List<Tile> tileList = null;
 
     @Getter protected int depth;
+    @Getter protected int tileMapWidth;
+    @Getter protected int tileMapHeight;
     @Getter @Setter protected Tileset Tileset;
 
     public List<Tile> getTiles() {
